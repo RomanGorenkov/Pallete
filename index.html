@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Pallete</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-left-container">
+            <img class="header-menu-img" src="assets/img/menu-img.png" alt="">
+            <h1 class="header-title">CodeJam-Pallete</h1>
+            <span class="save-instruction"><b>S</b> - Save canvas &nbsp/&nbsp <b>U</b> - Upload canvas &nbsp|&nbsp
+                <b>Double click</b> to select figure, <b>one click</b> to move figure</span>
+        </div>
+        <img class="header-menu-img" src="assets/img/vertical-dots.png" alt="">
+    </header>
+    <aside class="tool-bar">
+        <div class="instruments-bar bar-item">
+            <button type="button" class="tool-button active" id="paint-bucket-button"><img class="tool-button-img"
+                    src="assets/img/paint.png" alt="">Paint bucket (P)</button>
+            <button type="button" class="tool-button" id="picker-button"><img class="tool-button-img"
+                    src="assets/img/choose.png" alt="">Choose color (C)</button>
+            <button type="button" class="tool-button" id="move-button"><img class="tool-button-img"
+                    src="assets/img/move.png" alt="">Move (M)</button>
+            <button type="button" class="tool-button" id="transform-button"><img class="tool-button-img"
+                    src="assets/img/transform.png" alt="">Transform (T)</button>
+        </div>
+        <div class="color-bar bar-item">
+            <button type="button" class="color-button"><input type="color" id="current-color"><label for="head">Current
+                    color</label></button>
+            <button type="button" class="color-button"><i class="fas fa-circle" id="prev-color"></i>Prev color</button>
+            <button type="button" class="color-button"><i class="fas fa-circle color-red"></i>Red</button>
+            <button type="button" class="color-button"><i class="fas fa-circle color-blue"></i>Blue</button>
+        </div>
+    </aside>
+    <main>
+        <section class="canvas">
+            <div class="canvas-figure" id="first-figure" draggable="true"></div>
+            <div class="canvas-figure" id="second-figure" draggable="true"></div>
+            <div class="canvas-figure" id="third-figure" draggable="true"></div>
+            <div class="canvas-figure" id="fourth-figure" draggable="true"></div>
+            <div class="canvas-figure" id="fifth-figure" draggable="true"></div>
+            <div class="canvas-figure" id="sixth-figure" draggable="true"></div>
+            <div class="canvas-figure" id="seventh-figure" draggable="true"></div>
+            <div class="canvas-figure" id="eighth-figure" draggable="true"></div>
+            <div class="canvas-figure" id="ninth-figure" draggable="true"></div>
+        </section>
+    </main>
+    <script src="js/external.js"></script>
+</body>
+
+</html>

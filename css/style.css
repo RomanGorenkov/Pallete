@@ -1,0 +1,213 @@
+body {
+    max-width: 1800px;
+    min-width: 1500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: aqua; */
+    box-shadow: 0 0 5px 5px gray;
+    padding: 0 10px 10px;
+    margin-bottom: 23px;
+}
+
+.header-left-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-menu-img {
+    object-fit: contain;
+    height: 30px;
+    width: auto;
+}
+
+.header-title {
+    font-size: inherit;
+    margin-left: 150px;
+}
+
+.save-instruction {
+    font-size: 12px;
+    margin: 0 100px;
+}
+
+.tool-bar {
+    width: 250px;
+    height: 600px;
+    margin: 20px 50px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: aqua; */
+}
+
+.bar-item {
+    width: 100%;
+    height: 40%;
+    box-shadow: 1px 1px 3px 2px gray;
+    /* background-color: aquamarine; */
+}
+
+.bar-item>button {
+    width: inherit;
+    height: 4em;
+    font-size: 14px;
+    color: gray;
+    text-decoration: none;
+    text-align: left;
+    padding: .2em 15% .2em .8em;
+    outline: none;
+    border: none;
+    border-right: 1px solid rgba(151, 157, 163, 0.5);
+    border-top: 1px solid rgba(240, 248, 247, .01);
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.tool-button:hover {
+    background-color: rgb(231, 231, 231);
+    /* font-weight: bold; */
+}
+
+.active, .tool-button:focus {
+    /* color: rgb(0, 0, 0); */
+    /* background-color: rgb(223, 223, 223); */
+    font-weight: bold;
+    outline: none;
+}
+
+.tool-button:focus:hover {
+    border-bottom: 1px solid rgb(49, 87, 107);
+    /* background-image: linear-gradient(rgb(65, 71, 73), rgb(45, 48, 49)); */
+}
+
+.tool-button-img {
+    height: 40%;
+    width: 30px;
+    object-fit: contain;
+    margin: 0 10%;
+}
+
+.color-button:focus {
+    outline: none;
+}
+
+.fa-circle {
+    width: 17.5px;
+    border: 1.5px solid gray;
+    border-radius: 50%;
+    margin: 0 10% 0 17%;
+}
+
+.color-red {
+    color: red;
+}
+
+.color-blue {
+    color: skyblue;
+}
+
+#current-color {
+    width: 25px;
+    height: 25px;
+    margin: 0 7% 0 16%;
+}
+
+.transform {
+    border-radius: 50%;
+}
+
+.canvas {
+    position: relative;
+    width: 1100px;
+    height: 600px;
+    margin: 20px 40px 20px 10px;
+    box-shadow: 1px 1px 3px 2px gray;
+    background-color: white;
+}
+
+.canvas-figure {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background-color: gray;
+    display: inline-block;
+}
+
+#first-figure {
+    position: absolute;
+    top: calc(10px);
+    left: calc(25%);
+}
+
+#second-figure {
+    position: absolute;
+    top: calc(10px);
+    left: calc(25% + 200px);
+}
+
+#third-figure {
+    position: absolute;
+    top: calc(10px);
+    left: calc(25% + 400px);
+}
+
+#fourth-figure {
+    position: absolute;
+    top: calc(10px + 200px);
+    left: calc(25%);
+}
+
+#fifth-figure {
+    position: absolute;
+    top: calc(10px + 200px);
+    left: calc(25% + 200px);
+}
+
+#sixth-figure {
+    position: absolute;
+    top: calc(10px + 200px);
+    left: calc(25% + 400px);
+}
+
+#seventh-figure {
+    position: absolute;
+    top: calc(10px + 400px);
+    left: calc(25%);
+}
+
+#eighth-figure {
+    position: absolute;
+    top: calc(10px + 400px);
+    left: calc(25% + 200px);
+}
+
+#ninth-figure {
+    position: absolute;
+    top: calc(10px + 400px);
+    left: calc(25% + 400px);
+}
+
+[draggable] {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    /* Required to make elements draggable in old WebKit */
+    -khtml-user-drag: element;
+    -webkit-user-drag: element;
+}
+
+.canvas-figure.over {
+    border: 2px dashed rgba(0, 0, 0, 0.774);
+}
